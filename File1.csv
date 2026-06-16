@@ -1,0 +1,500 @@
+﻿studID,schoolID,schoolType,schoolYear8th,grade,daysEnroll,daysAttend,raceEth,gender
+10017,Central ES,Neighborhood,2019,8,180,180,AAPI,Female
+10045,Farrington Charter ES,Charter,2019,8,180,179,Latino,Female
+10363,Central ES,Neighborhood,2017,8,180,162,White,Male
+10412,Central ES,Neighborhood,2017,8,180,180,Black,Male
+10461,East ES,Neighborhood,2019,8,180,149,Black,Female
+10673,Nagaoka Charter ES,Charter,2017,8,180,147,Black,Male
+10705,South ES,Neighborhood,2018,8,180,170,Latino,Female
+10725,East ES,Neighborhood,2018,8,180,174,Latino,Male
+10874,Mahaffie Charter ES,Charter,2019,8,180,180,Black,Male
+10951,East ES,Neighborhood,2017,8,180,158,Latino,Male
+11131,Nagaoka Charter ES,Charter,2019,8,180,139,Black,Male
+11136,Nagaoka Charter ES,Charter,2018,8,180,172,White,Male
+11402,West ES,Neighborhood,2017,8,180,180,Latino,Male
+11496,Central ES,Neighborhood,2018,8,180,180,Latino,Male
+11595,Central ES,Neighborhood,2017,8,180,174,AAPI,Female
+11720,Usher Charter ES,Charter,2017,8,180,180,White,Male
+11758,South ES,Neighborhood,2018,8,180,131,Black,Female
+11902,East ES,Neighborhood,2017,8,180,144,Latino,Female
+12176,Nagaoka Charter ES,Charter,2018,8,180,180,Latino,Female
+12309,East ES,Neighborhood,2018,8,180,132,AAPI,Male
+12328,Nagaoka Charter ES,Charter,2019,8,180,144,Black,Female
+12426,Farrington Charter ES,Charter,2017,8,180,166,Latino,Male
+12760,East ES,Neighborhood,2019,8,180,173,Black,Female
+12875,Central ES,Neighborhood,2017,8,180,180,Latino,Male
+12886,East ES,Neighborhood,2017,8,180,172,Black,Male
+12973,East ES,Neighborhood,2019,8,180,152,Black,Female
+13142,West ES,Neighborhood,2019,8,180,180,White,Female
+13986,West ES,Neighborhood,2018,8,180,169,Latino,Female
+14150,Nagaoka Charter ES,Charter,2019,8,180,180,AAPI,Male
+14276,South ES,Neighborhood,2017,8,180,180,Black,Female
+14311,East ES,Neighborhood,2017,8,180,168,Latino,Male
+14420,East ES,Neighborhood,2017,8,180,179,Black,Male
+14585,Nagaoka Charter ES,Charter,2017,8,180,165,AAPI,Male
+14631,East ES,Neighborhood,2018,8,180,180,AAPI,Female
+14763,Usher Charter ES,Charter,2017,8,180,180,Black,Male
+15041,Central ES,Neighborhood,2019,8,180,149,Latino,Male
+15076,West ES,Neighborhood,2017,8,180,168,Black,Female
+15185,North ES,Neighborhood,2017,8,180,175,Latino,Male
+15752,South ES,Neighborhood,2017,8,180,180,Black,Male
+15753,Farrington Charter ES,Charter,2019,8,180,180,White,Female
+16079,Nagaoka Charter ES,Charter,2019,8,180,180,Latino,Female
+16234,Mahaffie Charter ES,Charter,2018,8,180,173,White,Female
+16397,Nagaoka Charter ES,Charter,2019,8,180,151,Black,Male
+16489,West ES,Neighborhood,2019,8,180,129,Black,Female
+16547,Central ES,Neighborhood,2019,8,180,180,Black,Male
+16670,Usher Charter ES,Charter,2017,8,180,180,White,Male
+16828,Central ES,Neighborhood,2019,8,180,165,White,Female
+17027,North ES,Neighborhood,2017,8,180,180,AAPI,Male
+17108,East ES,Neighborhood,2018,8,180,139,White,Male
+17555,East ES,Neighborhood,2017,8,180,167,Black,Female
+17824,East ES,Neighborhood,2019,8,180,180,Latino,Male
+17875,Nagaoka Charter ES,Charter,2017,8,180,180,Latino,Male
+18021,Usher Charter ES,Charter,2019,8,180,147,Latino,Female
+18397,Nagaoka Charter ES,Charter,2019,8,180,180,Latino,Male
+18615,East ES,Neighborhood,2019,8,180,142,Black,Male
+18930,Central ES,Neighborhood,2019,8,180,153,White,Male
+18969,South ES,Neighborhood,2017,8,180,163,AAPI,Male
+19008,East ES,Neighborhood,2017,8,180,161,Black,Male
+19142,East ES,Neighborhood,2017,8,180,180,Black,Female
+19175,East ES,Neighborhood,2017,8,180,120,White,Female
+19266,Mahaffie Charter ES,Charter,2018,8,180,175,Black,Female
+19321,Central ES,Neighborhood,2019,8,180,130,Black,Female
+19390,Nagaoka Charter ES,Charter,2017,8,180,180,Black,Female
+19636,East ES,Neighborhood,2019,8,180,180,Latino,Male
+19723,East ES,Neighborhood,2019,8,180,148,Latino,Female
+19822,Central ES,Neighborhood,2018,8,180,159,Black,Female
+19896,East ES,Neighborhood,2019,8,180,180,Black,Male
+19933,Nagaoka Charter ES,Charter,2019,8,180,142,Black,Male
+20668,Nagaoka Charter ES,Charter,2019,8,180,160,AAPI,Male
+21127,Usher Charter ES,Charter,2019,8,180,180,Black,Female
+21136,East ES,Neighborhood,2017,8,180,156,White,Female
+21287,Farrington Charter ES,Charter,2019,8,180,156,AAPI,Female
+21619,Central ES,Neighborhood,2018,8,180,152,Latino,Female
+21656,Farrington Charter ES,Charter,2019,8,180,154,AAPI,Female
+22063,East ES,Neighborhood,2018,8,180,180,Black,Female
+22073,Usher Charter ES,Charter,2017,8,180,164,White,Female
+22363,North ES,Neighborhood,2017,8,180,135,Black,Male
+22493,Nagaoka Charter ES,Charter,2017,8,180,180,Black,Female
+22564,South ES,Neighborhood,2019,8,180,149,White,Female
+22787,North ES,Neighborhood,2019,8,180,139,White,Male
+22913,Nagaoka Charter ES,Charter,2019,8,180,180,Black,Female
+23007,South ES,Neighborhood,2019,8,180,159,Black,Female
+23806,Nagaoka Charter ES,Charter,2019,8,180,155,Black,Female
+23851,Usher Charter ES,Charter,2019,8,180,180,Black,Female
+23897,Central ES,Neighborhood,2017,8,180,176,White,Female
+24110,East ES,Neighborhood,2019,8,180,146,Black,Male
+24166,South ES,Neighborhood,2017,8,180,166,Black,Female
+24286,Nagaoka Charter ES,Charter,2017,8,180,180,Black,Female
+24700,Nagaoka Charter ES,Charter,2018,8,180,171,Black,Female
+24746,Usher Charter ES,Charter,2017,8,180,153,AAPI,Male
+25100,West ES,Neighborhood,2017,8,180,176,Black,Female
+25322,South ES,Neighborhood,2018,8,180,155,Latino,Male
+25369,East ES,Neighborhood,2019,8,180,150,Latino,Male
+25492,East ES,Neighborhood,2017,8,180,180,White,Male
+25547,East ES,Neighborhood,2017,8,180,170,Latino,Male
+26170,North ES,Neighborhood,2019,8,180,155,Latino,Male
+26177,Usher Charter ES,Charter,2019,8,180,136,Black,Female
+26234,Mahaffie Charter ES,Charter,2019,8,180,172,Black,Male
+26440,Nagaoka Charter ES,Charter,2018,8,180,144,Black,Male
+26446,South ES,Neighborhood,2019,8,180,169,Black,Male
+26484,East ES,Neighborhood,2018,8,180,152,Black,Female
+26485,North ES,Neighborhood,2017,8,180,180,Black,Female
+26617,North ES,Neighborhood,2017,8,180,177,Latino,Female
+26799,West ES,Neighborhood,2018,8,180,115,Black,Female
+26947,Farrington Charter ES,Charter,2017,8,180,152,Latino,Female
+27092,East ES,Neighborhood,2018,8,180,135,AAPI,Female
+27245,Nagaoka Charter ES,Charter,2018,8,180,178,Latino,Male
+27297,Nagaoka Charter ES,Charter,2017,8,180,158,AAPI,Female
+27426,West ES,Neighborhood,2017,8,180,165,Black,Female
+27880,Usher Charter ES,Charter,2019,8,180,136,White,Female
+27912,North ES,Neighborhood,2019,8,180,180,Latino,Female
+28070,West ES,Neighborhood,2019,8,180,180,Black,Male
+28492,East ES,Neighborhood,2018,8,180,153,White,Male
+28575,North ES,Neighborhood,2019,8,180,167,Black,Male
+28769,Central ES,Neighborhood,2018,8,180,163,Latino,Female
+28849,Usher Charter ES,Charter,2019,8,180,137,White,Male
+28986,Usher Charter ES,Charter,2019,8,180,180,White,Female
+29373,West ES,Neighborhood,2019,8,180,164,Black,Female
+29416,North ES,Neighborhood,2019,8,180,180,Black,Male
+29425,South ES,Neighborhood,2017,8,180,177,White,Male
+29547,Farrington Charter ES,Charter,2018,8,180,161,Black,Female
+29684,East ES,Neighborhood,2019,8,180,144,White,Male
+29953,Nagaoka Charter ES,Charter,2017,8,180,172,Latino,Male
+30080,East ES,Neighborhood,2017,8,180,146,AAPI,Male
+30150,Nagaoka Charter ES,Charter,2017,8,180,167,Black,Male
+30883,Nagaoka Charter ES,Charter,2018,8,180,133,Black,Male
+31155,East ES,Neighborhood,2017,8,180,170,White,Female
+31509,North ES,Neighborhood,2019,8,180,149,AAPI,Female
+31512,East ES,Neighborhood,2019,8,180,153,White,Female
+31810,East ES,Neighborhood,2018,8,180,162,AAPI,Female
+31923,East ES,Neighborhood,2018,8,180,166,Black,Female
+31971,Mahaffie Charter ES,Charter,2017,8,180,170,Black,Female
+32302,East ES,Neighborhood,2017,8,180,115,Black,Female
+32370,South ES,Neighborhood,2018,8,180,161,Black,Male
+32389,Usher Charter ES,Charter,2017,8,180,171,Latino,Male
+32844,East ES,Neighborhood,2019,8,180,180,White,Female
+33066,East ES,Neighborhood,2018,8,180,160,Black,Female
+33117,East ES,Neighborhood,2017,8,180,175,Latino,Male
+33147,Usher Charter ES,Charter,2017,8,180,169,White,Male
+33436,East ES,Neighborhood,2017,8,180,175,AAPI,Male
+33453,South ES,Neighborhood,2017,8,180,166,Latino,Female
+33706,Usher Charter ES,Charter,2017,8,180,180,Black,Female
+34334,West ES,Neighborhood,2018,8,180,148,Black,Male
+34533,Mahaffie Charter ES,Charter,2019,8,180,155,AAPI,Male
+34693,Usher Charter ES,Charter,2017,8,180,173,AAPI,Male
+34901,North ES,Neighborhood,2017,8,180,180,Black,Male
+35133,North ES,Neighborhood,2018,8,180,180,Latino,Male
+35310,North ES,Neighborhood,2017,8,180,168,AAPI,Male
+35345,Farrington Charter ES,Charter,2019,8,180,180,Black,Female
+35507,Nagaoka Charter ES,Charter,2019,8,180,134,AAPI,Female
+35549,Farrington Charter ES,Charter,2018,8,180,173,AAPI,Female
+35840,East ES,Neighborhood,2017,8,180,180,AAPI,Female
+35950,East ES,Neighborhood,2018,8,180,147,Latino,Male
+36163,East ES,Neighborhood,2017,8,180,180,Black,Female
+36202,Mahaffie Charter ES,Charter,2019,8,180,149,Latino,Male
+36695,Central ES,Neighborhood,2017,8,180,160,AAPI,Male
+36721,West ES,Neighborhood,2019,8,180,135,Black,Female
+36957,East ES,Neighborhood,2017,8,180,180,AAPI,Male
+37029,East ES,Neighborhood,2019,8,180,164,Latino,Male
+37440,West ES,Neighborhood,2019,8,180,169,Latino,Female
+37796,South ES,Neighborhood,2018,8,180,124,Black,Female
+38159,Nagaoka Charter ES,Charter,2017,8,180,163,Black,Male
+38186,East ES,Neighborhood,2017,8,180,144,Black,Female
+38443,Usher Charter ES,Charter,2019,8,180,180,Latino,Female
+38955,Nagaoka Charter ES,Charter,2019,8,180,161,Latino,Female
+39367,West ES,Neighborhood,2017,8,180,173,Black,Female
+39857,Mahaffie Charter ES,Charter,2017,8,180,178,White,Female
+39914,Usher Charter ES,Charter,2019,8,180,146,AAPI,Male
+39973,North ES,Neighborhood,2017,8,180,160,Black,Male
+40040,Nagaoka Charter ES,Charter,2017,8,180,171,Black,Male
+40155,Farrington Charter ES,Charter,2017,8,180,174,White,Male
+40209,Nagaoka Charter ES,Charter,2019,8,180,121,Black,Male
+40273,Usher Charter ES,Charter,2017,8,180,166,AAPI,Female
+40349,Farrington Charter ES,Charter,2017,8,180,180,Latino,Male
+40634,North ES,Neighborhood,2018,8,180,180,Latino,Male
+40655,Farrington Charter ES,Charter,2019,8,180,145,Latino,Male
+40831,East ES,Neighborhood,2017,8,180,178,Black,Female
+40896,Usher Charter ES,Charter,2017,8,180,160,Black,Female
+40994,Nagaoka Charter ES,Charter,2017,8,180,180,Black,Female
+41320,South ES,Neighborhood,2018,8,180,172,Black,Female
+41358,West ES,Neighborhood,2019,8,180,150,Black,Male
+41416,Nagaoka Charter ES,Charter,2019,8,180,133,Black,Female
+41522,South ES,Neighborhood,2017,8,180,180,Black,Male
+41848,Nagaoka Charter ES,Charter,2017,8,180,180,Black,Male
+42149,Nagaoka Charter ES,Charter,2017,8,180,163,Black,Female
+42180,North ES,Neighborhood,2017,8,180,180,Black,Female
+42274,West ES,Neighborhood,2018,8,180,180,AAPI,Male
+42387,Farrington Charter ES,Charter,2017,8,180,180,White,Female
+42543,Central ES,Neighborhood,2018,8,180,165,Black,Male
+42557,Farrington Charter ES,Charter,2017,8,180,112,AAPI,Female
+42822,Nagaoka Charter ES,Charter,2019,8,180,180,Black,Male
+42902,Mahaffie Charter ES,Charter,2019,8,180,148,Black,Female
+43304,Mahaffie Charter ES,Charter,2018,8,180,180,White,Female
+43410,Central ES,Neighborhood,2019,8,180,180,Black,Female
+43654,East ES,Neighborhood,2018,8,180,171,Black,Female
+44019,Mahaffie Charter ES,Charter,2017,8,180,149,Black,Female
+44282,Mahaffie Charter ES,Charter,2018,8,180,180,AAPI,Female
+44301,Central ES,Neighborhood,2019,8,180,177,Black,Female
+44322,East ES,Neighborhood,2017,8,180,166,Black,Female
+44335,Nagaoka Charter ES,Charter,2018,8,180,170,White,Female
+44937,East ES,Neighborhood,2018,8,180,139,Black,Male
+44938,Mahaffie Charter ES,Charter,2019,8,180,169,White,Male
+44978,West ES,Neighborhood,2019,8,180,165,White,Male
+45166,East ES,Neighborhood,2017,8,180,169,Black,Female
+45252,North ES,Neighborhood,2018,8,180,159,Latino,Female
+45388,South ES,Neighborhood,2017,8,180,160,Black,Male
+45785,East ES,Neighborhood,2018,8,180,180,White,Male
+45849,East ES,Neighborhood,2017,8,180,168,Black,Female
+45872,East ES,Neighborhood,2018,8,180,139,Black,Female
+46147,Nagaoka Charter ES,Charter,2017,8,180,173,Black,Male
+46278,East ES,Neighborhood,2017,8,180,165,White,Female
+47366,North ES,Neighborhood,2017,8,180,174,Black,Male
+47419,East ES,Neighborhood,2017,8,180,164,Black,Male
+47753,East ES,Neighborhood,2018,8,180,176,Black,Female
+47823,South ES,Neighborhood,2019,8,180,126,Latino,Female
+48348,Usher Charter ES,Charter,2019,8,180,133,White,Female
+48611,East ES,Neighborhood,2018,8,180,130,Latino,Male
+48619,South ES,Neighborhood,2019,8,180,180,Black,Male
+49108,Nagaoka Charter ES,Charter,2019,8,180,180,Black,Female
+49112,East ES,Neighborhood,2018,8,180,160,Latino,Female
+49159,Nagaoka Charter ES,Charter,2019,8,180,180,Black,Male
+49194,Mahaffie Charter ES,Charter,2017,8,180,172,Black,Male
+49336,North ES,Neighborhood,2019,8,180,160,White,Female
+49759,Nagaoka Charter ES,Charter,2017,8,180,180,White,Female
+49816,Farrington Charter ES,Charter,2018,8,180,149,Latino,Female
+49844,East ES,Neighborhood,2019,8,180,155,Black,Male
+50020,Nagaoka Charter ES,Charter,2018,8,180,179,AAPI,Female
+50085,North ES,Neighborhood,2018,8,180,180,AAPI,Female
+50541,North ES,Neighborhood,2019,8,180,176,AAPI,Female
+50581,West ES,Neighborhood,2019,8,180,132,White,Female
+50952,Central ES,Neighborhood,2019,8,180,137,Black,Female
+50962,North ES,Neighborhood,2019,8,180,164,Black,Female
+51075,West ES,Neighborhood,2017,8,180,150,Black,Male
+51106,West ES,Neighborhood,2019,8,180,171,White,Female
+51325,Nagaoka Charter ES,Charter,2017,8,180,160,AAPI,Male
+51496,West ES,Neighborhood,2017,8,180,161,AAPI,Female
+51611,Farrington Charter ES,Charter,2018,8,180,148,Black,Male
+51652,East ES,Neighborhood,2017,8,180,170,Black,Female
+51897,North ES,Neighborhood,2017,8,180,160,Black,Male
+51922,East ES,Neighborhood,2017,8,180,165,Latino,Female
+51930,East ES,Neighborhood,2018,8,180,149,Black,Female
+51977,Usher Charter ES,Charter,2017,8,180,174,Black,Female
+52539,East ES,Neighborhood,2019,8,180,180,White,Male
+52805,North ES,Neighborhood,2017,8,180,160,Black,Male
+53036,North ES,Neighborhood,2017,8,180,160,Latino,Male
+53152,Farrington Charter ES,Charter,2018,8,180,148,White,Female
+53180,Central ES,Neighborhood,2018,8,180,180,Latino,Male
+53196,Nagaoka Charter ES,Charter,2018,8,180,174,White,Male
+53338,South ES,Neighborhood,2018,8,180,180,Black,Female
+53490,Farrington Charter ES,Charter,2018,8,180,167,Latino,Male
+53638,Mahaffie Charter ES,Charter,2017,8,180,178,Black,Female
+53903,South ES,Neighborhood,2017,8,180,173,Black,Female
+53972,South ES,Neighborhood,2018,8,180,145,Black,Male
+53983,Usher Charter ES,Charter,2019,8,180,168,Latino,Female
+54194,Mahaffie Charter ES,Charter,2017,8,180,164,Latino,Female
+54202,Usher Charter ES,Charter,2019,8,180,180,Latino,Female
+54412,Farrington Charter ES,Charter,2017,8,180,161,Latino,Male
+54622,East ES,Neighborhood,2017,8,180,180,Latino,Female
+54768,Farrington Charter ES,Charter,2018,8,180,144,AAPI,Male
+55141,Usher Charter ES,Charter,2019,8,180,164,Latino,Male
+55614,Usher Charter ES,Charter,2017,8,180,162,Latino,Male
+55745,Farrington Charter ES,Charter,2017,8,180,165,Black,Male
+55809,East ES,Neighborhood,2017,8,180,168,Black,Female
+55827,Farrington Charter ES,Charter,2019,8,180,150,Black,Male
+55831,Usher Charter ES,Charter,2019,8,180,180,Black,Female
+56012,East ES,Neighborhood,2018,8,180,162,Black,Female
+56152,Nagaoka Charter ES,Charter,2019,8,180,155,Latino,Male
+56369,Nagaoka Charter ES,Charter,2019,8,180,151,Black,Female
+56725,East ES,Neighborhood,2019,8,180,168,Black,Female
+56920,East ES,Neighborhood,2017,8,180,180,White,Female
+57042,East ES,Neighborhood,2018,8,180,171,Latino,Female
+57059,South ES,Neighborhood,2017,8,180,164,Black,Male
+57131,Nagaoka Charter ES,Charter,2019,8,180,180,AAPI,Male
+57272,East ES,Neighborhood,2018,8,180,161,Black,Male
+57338,East ES,Neighborhood,2019,8,180,146,Black,Female
+57522,West ES,Neighborhood,2017,8,180,180,Black,Male
+57833,East ES,Neighborhood,2017,8,180,180,Black,Male
+57845,East ES,Neighborhood,2017,8,180,180,White,Female
+58172,Nagaoka Charter ES,Charter,2018,8,180,180,Black,Female
+58174,East ES,Neighborhood,2017,8,180,170,AAPI,Female
+58378,Farrington Charter ES,Charter,2019,8,180,167,Latino,Female
+58459,Usher Charter ES,Charter,2019,8,180,164,Black,Female
+58486,East ES,Neighborhood,2018,8,180,151,Black,Male
+58951,North ES,Neighborhood,2017,8,180,174,White,Female
+58960,Nagaoka Charter ES,Charter,2018,8,180,157,Latino,Male
+59176,East ES,Neighborhood,2017,8,180,180,Latino,Male
+59624,Usher Charter ES,Charter,2018,8,180,161,Black,Male
+59649,Mahaffie Charter ES,Charter,2019,8,180,128,Latino,Male
+59828,Mahaffie Charter ES,Charter,2017,8,180,142,Black,Female
+59928,Usher Charter ES,Charter,2017,8,180,166,Black,Female
+60667,Nagaoka Charter ES,Charter,2019,8,180,153,Latino,Female
+60851,Central ES,Neighborhood,2018,8,180,164,Black,Female
+61218,Usher Charter ES,Charter,2017,8,180,178,Black,Male
+62078,East ES,Neighborhood,2019,8,180,158,Black,Male
+62294,Central ES,Neighborhood,2017,8,180,180,Latino,Female
+62465,North ES,Neighborhood,2019,8,180,135,Latino,Male
+62472,Nagaoka Charter ES,Charter,2017,8,180,169,Black,Female
+62602,Nagaoka Charter ES,Charter,2017,8,180,151,Latino,Female
+62607,East ES,Neighborhood,2018,8,180,175,Black,Male
+62765,East ES,Neighborhood,2019,8,180,180,Latino,Female
+62767,East ES,Neighborhood,2019,8,180,145,Latino,Female
+63172,Nagaoka Charter ES,Charter,2017,8,180,160,Black,Female
+63737,East ES,Neighborhood,2017,8,180,180,White,Male
+64295,East ES,Neighborhood,2018,8,180,180,White,Male
+64490,Nagaoka Charter ES,Charter,2017,8,180,180,Latino,Male
+64748,Central ES,Neighborhood,2017,8,180,160,Black,Female
+64958,East ES,Neighborhood,2018,8,180,135,White,Female
+65085,South ES,Neighborhood,2017,8,180,164,White,Female
+65106,Nagaoka Charter ES,Charter,2017,8,180,172,AAPI,Male
+65203,Mahaffie Charter ES,Charter,2017,8,180,160,White,Female
+65283,Farrington Charter ES,Charter,2018,8,180,170,Black,Female
+65443,Nagaoka Charter ES,Charter,2019,8,180,180,Black,Male
+65871,Nagaoka Charter ES,Charter,2017,8,180,175,Black,Female
+66054,Nagaoka Charter ES,Charter,2019,8,180,180,Black,Female
+66326,Nagaoka Charter ES,Charter,2017,8,180,161,Black,Female
+66482,Central ES,Neighborhood,2017,8,180,180,Black,Female
+66860,South ES,Neighborhood,2019,8,180,180,Black,Male
+66896,North ES,Neighborhood,2017,8,180,162,White,Male
+66903,Mahaffie Charter ES,Charter,2017,8,180,170,Latino,Male
+67265,East ES,Neighborhood,2017,8,180,176,Latino,Male
+67526,Nagaoka Charter ES,Charter,2018,8,180,180,Black,Female
+67540,Nagaoka Charter ES,Charter,2017,8,180,170,Black,Male
+67586,East ES,Neighborhood,2018,8,180,152,White,Female
+68238,East ES,Neighborhood,2019,8,180,129,Black,Male
+68259,Mahaffie Charter ES,Charter,2017,8,180,137,Black,Female
+68750,Central ES,Neighborhood,2018,8,180,164,White,Male
+68823,Farrington Charter ES,Charter,2017,8,180,180,Black,Female
+68865,Nagaoka Charter ES,Charter,2018,8,180,180,Black,Female
+69214,East ES,Neighborhood,2018,8,180,180,Black,Male
+69510,West ES,Neighborhood,2017,8,180,159,AAPI,Female
+69645,Farrington Charter ES,Charter,2019,8,180,152,Black,Male
+69721,Nagaoka Charter ES,Charter,2019,8,180,143,AAPI,Female
+69795,East ES,Neighborhood,2018,8,180,158,Black,Male
+69878,East ES,Neighborhood,2017,8,180,180,Latino,Male
+70006,West ES,Neighborhood,2017,8,180,149,Black,Female
+70062,Nagaoka Charter ES,Charter,2019,8,180,146,Latino,Male
+70087,North ES,Neighborhood,2019,8,180,158,Latino,Female
+70098,Nagaoka Charter ES,Charter,2019,8,180,180,Latino,Female
+70311,East ES,Neighborhood,2019,8,180,175,Black,Female
+70393,Nagaoka Charter ES,Charter,2019,8,180,180,Black,Female
+70468,Nagaoka Charter ES,Charter,2018,8,180,175,Black,Female
+70834,East ES,Neighborhood,2018,8,180,157,Black,Female
+71366,Mahaffie Charter ES,Charter,2018,8,180,146,Black,Female
+71480,Mahaffie Charter ES,Charter,2019,8,180,163,Black,Male
+71598,Central ES,Neighborhood,2017,8,180,180,Black,Male
+71740,Central ES,Neighborhood,2017,8,180,161,Black,Female
+72166,West ES,Neighborhood,2018,8,180,163,AAPI,Female
+72653,Farrington Charter ES,Charter,2017,8,180,168,Black,Male
+73412,West ES,Neighborhood,2017,8,180,180,AAPI,Female
+73415,Nagaoka Charter ES,Charter,2019,8,180,136,Latino,Female
+73475,Nagaoka Charter ES,Charter,2019,8,180,180,Latino,Female
+73536,Nagaoka Charter ES,Charter,2019,8,180,140,Latino,Male
+73822,Central ES,Neighborhood,2017,8,180,173,Black,Female
+74000,East ES,Neighborhood,2019,8,180,180,AAPI,Male
+74453,East ES,Neighborhood,2018,8,180,141,Black,Female
+74691,Nagaoka Charter ES,Charter,2017,8,180,180,Black,Male
+74702,East ES,Neighborhood,2017,8,180,135,AAPI,Female
+74979,East ES,Neighborhood,2017,8,180,180,AAPI,Male
+75045,East ES,Neighborhood,2019,8,180,143,White,Male
+75070,Mahaffie Charter ES,Charter,2019,8,180,147,Black,Male
+75269,North ES,Neighborhood,2018,8,180,162,AAPI,Female
+75318,Mahaffie Charter ES,Charter,2017,8,180,179,Latino,Male
+75322,Mahaffie Charter ES,Charter,2019,8,180,133,Black,Female
+75555,East ES,Neighborhood,2017,8,180,172,Black,Female
+75677,Mahaffie Charter ES,Charter,2018,8,180,158,Black,Male
+76058,Nagaoka Charter ES,Charter,2019,8,180,138,Black,Male
+76332,Nagaoka Charter ES,Charter,2017,8,180,167,Black,Male
+76416,East ES,Neighborhood,2019,8,180,180,Latino,Female
+76422,West ES,Neighborhood,2017,8,180,166,Latino,Female
+76617,East ES,Neighborhood,2018,8,180,150,White,Female
+76711,Mahaffie Charter ES,Charter,2019,8,180,150,Black,Female
+77236,Usher Charter ES,Charter,2017,8,180,163,Black,Female
+77437,Farrington Charter ES,Charter,2017,8,180,126,Black,Male
+77479,Nagaoka Charter ES,Charter,2017,8,180,175,Black,Female
+77669,North ES,Neighborhood,2019,8,180,150,Black,Female
+78008,East ES,Neighborhood,2019,8,180,156,Black,Male
+78208,South ES,Neighborhood,2019,8,180,180,Black,Female
+78589,East ES,Neighborhood,2019,8,180,179,Black,Male
+78995,Mahaffie Charter ES,Charter,2019,8,180,148,Black,Male
+79322,East ES,Neighborhood,2019,8,180,157,Black,Male
+79760,Central ES,Neighborhood,2019,8,180,152,Black,Female
+79779,Mahaffie Charter ES,Charter,2017,8,180,154,Latino,Male
+79945,Usher Charter ES,Charter,2019,8,180,144,Black,Female
+80324,West ES,Neighborhood,2019,8,180,175,White,Female
+80688,West ES,Neighborhood,2019,8,180,180,AAPI,Female
+81018,Mahaffie Charter ES,Charter,2019,8,180,180,Black,Male
+81160,Mahaffie Charter ES,Charter,2017,8,180,180,Black,Male
+81168,East ES,Neighborhood,2018,8,180,180,Black,Male
+81199,East ES,Neighborhood,2017,8,180,164,Latino,Female
+81229,West ES,Neighborhood,2017,8,180,169,Black,Female
+81444,South ES,Neighborhood,2018,8,180,147,Latino,Male
+81970,Farrington Charter ES,Charter,2019,8,180,126,Black,Female
+82098,West ES,Neighborhood,2017,8,180,158,Black,Male
+82127,East ES,Neighborhood,2017,8,180,157,White,Male
+82516,East ES,Neighborhood,2019,8,180,175,Latino,Female
+82571,Nagaoka Charter ES,Charter,2017,8,180,180,Black,Female
+82575,Usher Charter ES,Charter,2017,8,180,149,AAPI,Female
+82913,Mahaffie Charter ES,Charter,2017,8,180,153,AAPI,Male
+82936,East ES,Neighborhood,2017,8,180,154,Latino,Female
+83752,Nagaoka Charter ES,Charter,2017,8,180,132,Latino,Male
+83922,Mahaffie Charter ES,Charter,2019,8,180,155,Black,Male
+84014,East ES,Neighborhood,2017,8,180,180,White,Female
+84481,Usher Charter ES,Charter,2018,8,180,169,AAPI,Male
+84513,East ES,Neighborhood,2019,8,180,134,Black,Female
+84562,Nagaoka Charter ES,Charter,2017,8,180,176,Latino,Female
+84727,Nagaoka Charter ES,Charter,2019,8,180,180,Latino,Male
+84978,Farrington Charter ES,Charter,2019,8,180,142,White,Female
+85581,Mahaffie Charter ES,Charter,2019,8,180,133,Black,Female
+85644,West ES,Neighborhood,2018,8,180,180,White,Female
+85910,Mahaffie Charter ES,Charter,2019,8,180,146,Black,Male
+86082,South ES,Neighborhood,2017,8,180,172,White,Female
+86206,Usher Charter ES,Charter,2019,8,180,149,Black,Male
+86353,South ES,Neighborhood,2017,8,180,160,White,Male
+86390,Central ES,Neighborhood,2017,8,180,154,Latino,Male
+86514,Central ES,Neighborhood,2019,8,180,134,Latino,Male
+87165,West ES,Neighborhood,2019,8,180,178,Black,Male
+87643,Central ES,Neighborhood,2018,8,180,150,Black,Female
+87782,West ES,Neighborhood,2018,8,180,178,Black,Female
+87792,East ES,Neighborhood,2019,8,180,135,AAPI,Male
+87828,South ES,Neighborhood,2019,8,180,156,Latino,Female
+87975,Farrington Charter ES,Charter,2018,8,180,158,Latino,Female
+88021,East ES,Neighborhood,2017,8,180,158,Latino,Male
+88270,Nagaoka Charter ES,Charter,2017,8,180,171,Black,Female
+88360,South ES,Neighborhood,2019,8,180,134,Black,Female
+88497,Nagaoka Charter ES,Charter,2019,8,180,157,Latino,Male
+88782,Farrington Charter ES,Charter,2019,8,180,149,White,Male
+89080,North ES,Neighborhood,2018,8,180,172,White,Male
+89141,East ES,Neighborhood,2018,8,180,179,Latino,Female
+89332,East ES,Neighborhood,2019,8,180,171,Black,Female
+89338,Mahaffie Charter ES,Charter,2017,8,180,146,AAPI,Female
+89410,South ES,Neighborhood,2017,8,180,180,Black,Male
+89414,Farrington Charter ES,Charter,2019,8,180,149,Black,Male
+89423,Central ES,Neighborhood,2019,8,180,180,Latino,Male
+89490,East ES,Neighborhood,2019,8,180,145,White,Female
+89491,North ES,Neighborhood,2019,8,180,134,White,Male
+89494,East ES,Neighborhood,2019,8,180,151,AAPI,Female
+89578,Nagaoka Charter ES,Charter,2018,8,180,163,Black,Female
+90658,Mahaffie Charter ES,Charter,2017,8,180,177,Latino,Male
+90675,West ES,Neighborhood,2019,8,180,176,Black,Female
+90733,South ES,Neighborhood,2018,8,180,166,Black,Male
+91207,Usher Charter ES,Charter,2019,8,180,136,Black,Male
+91273,East ES,Neighborhood,2017,8,180,180,Black,Female
+91406,Nagaoka Charter ES,Charter,2017,8,180,180,Latino,Female
+91409,North ES,Neighborhood,2017,8,180,173,Latino,Female
+91461,West ES,Neighborhood,2017,8,180,141,AAPI,Male
+91672,West ES,Neighborhood,2017,8,180,176,Black,Male
+91969,Nagaoka Charter ES,Charter,2017,8,180,180,Latino,Male
+92314,Central ES,Neighborhood,2017,8,180,168,Latino,Male
+92523,Nagaoka Charter ES,Charter,2017,8,180,180,Latino,Female
+92733,East ES,Neighborhood,2017,8,180,169,Latino,Male
+92777,Farrington Charter ES,Charter,2018,8,180,167,White,Female
+92831,Nagaoka Charter ES,Charter,2018,8,180,180,Latino,Male
+93037,East ES,Neighborhood,2017,8,180,180,Black,Male
+93173,West ES,Neighborhood,2017,8,180,154,Black,Male
+93530,Usher Charter ES,Charter,2018,8,180,152,White,Male
+93531,Farrington Charter ES,Charter,2018,8,180,139,White,Male
+93616,East ES,Neighborhood,2018,8,180,172,Latino,Male
+93765,East ES,Neighborhood,2019,8,180,162,Black,Female
+93835,West ES,Neighborhood,2017,8,180,171,Black,Female
+93891,West ES,Neighborhood,2017,8,180,159,Black,Female
+93968,Nagaoka Charter ES,Charter,2018,8,180,180,Latino,Female
+94592,East ES,Neighborhood,2019,8,180,169,Black,Female
+94661,Nagaoka Charter ES,Charter,2019,8,180,162,Latino,Female
+94847,Farrington Charter ES,Charter,2017,8,180,166,Black,Male
+95047,North ES,Neighborhood,2019,8,180,173,AAPI,Male
+95051,East ES,Neighborhood,2019,8,180,171,AAPI,Male
+95327,West ES,Neighborhood,2018,8,180,174,Black,Male
+95565,Mahaffie Charter ES,Charter,2019,8,180,142,White,Male
+95578,Usher Charter ES,Charter,2019,8,180,152,Black,Female
+95715,North ES,Neighborhood,2017,8,180,180,Black,Female
+96036,Central ES,Neighborhood,2018,8,180,167,Black,Male
+96188,East ES,Neighborhood,2019,8,180,172,AAPI,Male
+96211,East ES,Neighborhood,2017,8,180,171,Black,Female
+96219,Nagaoka Charter ES,Charter,2017,8,180,178,Black,Female
+96420,Nagaoka Charter ES,Charter,2019,8,180,180,Black,Female
+96423,East ES,Neighborhood,2017,8,180,164,Black,Female
+96567,East ES,Neighborhood,2019,8,180,180,White,Female
+96587,North ES,Neighborhood,2019,8,180,172,Latino,Male
+96707,North ES,Neighborhood,2018,8,180,172,Black,Male
+96777,East ES,Neighborhood,2017,8,180,163,Black,Male
+96799,South ES,Neighborhood,2018,8,180,180,Latino,Male
+97085,West ES,Neighborhood,2019,8,180,141,Latino,Male
+97090,West ES,Neighborhood,2018,8,180,177,Latino,Female
+97191,West ES,Neighborhood,2017,8,180,160,White,Female
+97281,East ES,Neighborhood,2018,8,180,137,Latino,Male
+97334,Nagaoka Charter ES,Charter,2017,8,180,167,Latino,Female
+97576,East ES,Neighborhood,2019,8,180,173,AAPI,Male
+97627,Mahaffie Charter ES,Charter,2019,8,180,156,Black,Male
+98241,Mahaffie Charter ES,Charter,2018,8,180,171,Black,Male
+98488,Nagaoka Charter ES,Charter,2017,8,180,173,Black,Male
+98570,Nagaoka Charter ES,Charter,2019,8,180,180,Black,Male
+99017,Nagaoka Charter ES,Charter,2018,8,180,149,Black,Female
+99057,South ES,Neighborhood,2017,8,180,154,White,Male
+99189,Farrington Charter ES,Charter,2018,8,180,164,White,Female
+99578,Farrington Charter ES,Charter,2017,8,180,179,AAPI,Male
+99822,Central ES,Neighborhood,2019,8,180,180,Black,Female
+99856,East ES,Neighborhood,2017,8,180,174,Latino,Male
+99904,West ES,Neighborhood,2019,8,180,180,Black,Female
+99981,Mahaffie Charter ES,Charter,2017,8,180,172,AAPI,Male
