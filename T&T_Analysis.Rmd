@@ -13,7 +13,7 @@ library(tidyverse)
 
 Loading files
 ```{r}
-#Set your working directory
+#Set working directory
 roster = read.csv("File1.csv")
 grade_8_outcomes = read.csv("File2.csv")
 hs_outcomes = read.csv("File3.csv")
@@ -37,6 +37,7 @@ master <- roster_with_gpa %>%
 
 
 # Add a new column that calculates the attendance rate, format for 2 decimal places
+master$attend_rate <- (master$daysAttend / master$daysEnroll) * 100
 master$attend_rate <- round((master$daysAttend / master$daysEnroll) * 100, 2)
 
 #Creating categorical variables
@@ -66,6 +67,8 @@ master_cats_hs <- master_cats %>%
 ```
 
 Writing functions
+
+3a: Has the percentage of students in this group changed over time (across different cohorts of 8th graders)?
 ```{r}
 #3a: Has the percentage of students in this group changed over time (across different cohorts of 8th graders)?
 group_over_time <- function(data, attend_binary, GPA_binary) {
@@ -79,16 +82,8 @@ group_over_time <- function(data, attend_binary, GPA_binary) {
   
 }
 
-specific_results <- group_over_time(
-  data = master_cats_hs, 
-  attend_binary = "High",
-  GPA_binary = "Low"
-)
-
-print(specific_results)
-
 ```
-
+3b: What is the race/ethnicity composition of the students in this group, and how does it compare to the composition of the entire population of students?
 ```{r}
 #3b: What is the race/ethnicity composition of the students in this group, and how does it compare to the composition of the entire population of students?
 
@@ -112,17 +107,9 @@ race_composition <- function(data, attend_binary, GPA_binary) {
   bind_rows(selected_group, all_students)
 }
 
-specific_results <- race_composition(
-  data = master_cats_hs, 
-  attend_binary = "High",
-  GPA_binary = "Low"
-  
-)
-
-print(specific_results)
   
 ```
-
+3c: What is the high school graduation rate of students who were in this group in eighth grade?
 ```{r}
 #3c: What is the high school graduation rate of students who were in this group in eighth grade? 
 
@@ -138,18 +125,8 @@ graduation_rate <- function(data, attend_binary, GPA_binary) {
     )
 }
 
-specific_results <- graduation_rate(
-  data = master_cats_hs, 
-  attend_binary = "High",
-  GPA_binary = "Low"
-  
-)
-
-print(specific_results)
-
-
 ```
-
+3d: How does the high school graduation rate of students in this category vary across middle schools?
 ```{r}
 #3d: How does the high school graduation rate of students in this category vary across middle schools? 
 
@@ -167,17 +144,9 @@ graduation_by_school <- function(data, attend_binary, GPA_binary) {
     arrange(desc(graduation_rate))
 }
 
-specific_results <- graduation_by_school(
-  data = master_cats_hs, 
-  attend_binary = "High",
-  GPA_binary = "Low"
-  
-)
-
-print(specific_results)
 
 ```
-
+3e: How does it vary across cohorts (years)?
 ```{r}
 #How does it vary across cohorts (years)?
 
@@ -194,17 +163,9 @@ graduation_by_cohort <- function(data, attend_binary, GPA_binary) {
     )
 }
 
-specific_results <- graduation_by_cohort(
-  data = master_cats_hs, 
-  attend_binary = "High",
-  GPA_binary = "Low"
-  
-)
-
-print(specific_results)
-
 
 ```
+
 
 Fuse all the mini functions into one primary function
 ```{r}
@@ -217,15 +178,6 @@ analyze_group <- function(data, attend_binary, GPA_binary) {
     graduation_by_cohort = graduation_by_cohort(data, attend_binary, GPA_binary)
   )
 }
-
-specific_results <- analyze_group(
-  data = master_cats_hs, 
-  attend_binary = "High",
-  GPA_binary = "Low"
-  
-)
-
-print(specific_results)
 
 ```
 
