@@ -27,20 +27,20 @@ The script (`T&T_Analysis.Rmd`) progresses through a data pipeline:
 ## Instructions: How to Run the Code
 **Follow these steps to set up your environment and run the analysis from start to finish:**
 
-**1. Before running the script, ensure you have R and RStudio installed.**
-* You will also need the `tidyverse` library loaded. Run the command: Library(tidyverse)
-* If you do not have it installed, open your R console and run: install.packages("tidyverse")
+**1. Before running the script, make sure you have R and RStudio installed.**
 
-**2. Ensure the following three raw data files are saved in your local working directory alongside the script:**
+**2. Ensure the following three raw data files are saved in your local working directory:**
 * **`File1.csv` (Student Roster):** Baseline demographic data including `studID`, `raceEth`, `gender`, `schoolID`, `schoolYear8th`, and `schoolType`.
-* **`File2.csv` (8th Grade Outcomes):** Academic performance tracking data containing `GPA`, `daysAttend`, and `daysEnroll`.
-* **`File3.csv` (High School Outcomes):** Long-term metrics including `hsID` and `gradStatus` (where `1` indicates graduated).
+* **`File2.csv` (8th Grade Outcomes):** Academic performance tracking data including `studID`, `GPA`, `daysAttend`, and `daysEnroll`.
+* **`File3.csv` (High School Outcomes):** Long-term metrics including `studID`, `hsID` and `gradStatus` (where `1` indicates graduated).
 
-**3. Open RStudio and load the .Rmd file.**
+**3. Load the .Rmd file and set working directory in RStudio.**
 * Set your working directory to the file's current location so R can locate your CSV files. In the top menu, navigate to:
 * Session > Set Working Directory > To Source File Location
 
-**4. Run the setup chunks sequentially to build and clean the master data frame**
+**4. Run the setup chunks sequentially to load libraries, build the data frames, and create the final master dataset with relevent information**
+* The current script will load the `tidyverse` library.
+* If you don't have it installed, run `install.packages("tidyverse")` in the console
 
 **5. Select which GPA category and Attendance category to analyze and run.**
 * Scroll to the final code chunk to select your target student group. Type your metrics into the analyze_group() function.
