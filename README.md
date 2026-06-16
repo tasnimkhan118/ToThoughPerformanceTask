@@ -1,4 +1,4 @@
-# To-Through-Candidate-Performance-Task
+# To & Through Candidate Performance Task
 An R analytics pipeline evaluating 8th-grade student demographics, cohort trends, and high school graduation rates based on attendance and GPA combinations.
 
 # 8th-Grade Student Cohort & Graduation Outcomes Analysis
