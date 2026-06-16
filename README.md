@@ -33,7 +33,7 @@ Ensure the following three raw data files are saved in your local working direct
 * **`File2.csv` (8th Grade Outcomes):** Academic performance tracking data containing `GPA`, `daysAttend`, and `daysEnroll`.
 * **`File3.csv` (High School Outcomes):** Long-term metrics including `hsID` and `gradStatus` (where `1` indicates graduated).
 
-### 1. Environment Prerequisites
+### Environment Prerequisites
 Before running the script, ensure you have R and RStudio installed. You will also need the `tidyverse` library suite. If you do not have it installed, open your R console and run:
 
 ```r
