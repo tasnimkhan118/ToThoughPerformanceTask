@@ -20,7 +20,7 @@ To run this analysis, ensure the following three raw data files are saved in you
 
 ## Code Structure & Logic
 
-The script (`TasnimKhan_T&T.Rmd`) progresses through a data pipeline:
+The script (`T&T_Analysis.Rmd`) progresses through a data pipeline:
 
 1.  **Data Cleaning & Filtering:** Merges the student rosters, handles missing data trends (such as isolated missing GPAs), and filters out data entry anomalies (e.g., GPAs listed as `8.0` on a standard `4.0` scale) to avoid skews.
 2.  **Creating Categorical Variables:** Calculates precise attendance rates (`(daysAttend / daysEnroll) * 100`) and categorizes students into binary segments (`High` vs. `Low`) for both attendance and GPA metrics.
