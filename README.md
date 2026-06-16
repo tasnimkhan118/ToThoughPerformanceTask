@@ -25,16 +25,28 @@ The script (`T&T_Analysis.Rmd`) progresses through a data pipeline:
 ---
 
 ## Instructions: How to Run the Code
-Follow these steps to set up your environment and run the analysis from start to finish:
+**Follow these steps to set up your environment and run the analysis from start to finish:**
 
-Ensure the following three raw data files are saved in your local working directory alongside the script:
+**1. Before running the script, ensure you have R and RStudio installed.**
+* You will also need the `tidyverse` library loaded. Run the command: Library(tidyverse)
+* If you do not have it installed, open your R console and run: install.packages("tidyverse")
 
+**2. Ensure the following three raw data files are saved in your local working directory alongside the script:**
 * **`File1.csv` (Student Roster):** Baseline demographic data including `studID`, `raceEth`, `gender`, `schoolID`, `schoolYear8th`, and `schoolType`.
 * **`File2.csv` (8th Grade Outcomes):** Academic performance tracking data containing `GPA`, `daysAttend`, and `daysEnroll`.
 * **`File3.csv` (High School Outcomes):** Long-term metrics including `hsID` and `gradStatus` (where `1` indicates graduated).
 
-### Environment Prerequisites
-Before running the script, ensure you have R and RStudio installed. You will also need the `tidyverse` library suite. If you do not have it installed, open your R console and run:
+**3. Open RStudio and load the .Rmd file.**
+* Set your working directory to the file's current location so R can locate your CSV files. In the top menu, navigate to:
+* Session > Set Working Directory > To Source File Location
 
-```r
-install.packages("tidyverse")
+**4. Run the setup chunks sequentially to build and clean the master data frame**
+
+**5. Select which GPA category and Attendance category to analyze and run.**
+* Scroll to the final code chunk to select your target student group. Type your metrics into the analyze_group() function.
+* GPA group can either be **High** or **Low**
+* Attendance group can either be **High** or **Low**
+
+
+
+
