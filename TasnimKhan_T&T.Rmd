@@ -1,0 +1,403 @@
+---
+title: "To&Through"
+author: "Tasnim Khan"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+Loading Libraries
+```{r}
+library(dplyr)
+library(tidyverse)
+```
+
+Loading files
+```{r}
+#Set working directory
+roster = read.csv("File1.csv")
+grade_8_outcomes = read.csv("File2.csv")
+hs_outcomes = read.csv("File3.csv")
+```
+
+Question 1a: Are there any students missing GPA data? 
+```{r}
+
+#Adding GPA column to Roster table
+roster_with_gpa <- roster %>%
+  left_join(grade_8_outcomes, by = "studID")
+  
+#isolating all the students who are missing a GPA among this new Roster data 
+na_gpa <- roster_with_gpa %>% filter(is.na(GPA))
+
+#get a quick count of the NA (missing) values
+count(na_gpa)
+
+```
+
+Question 1b: What do these students have in common (students with missing GPA)?
+```{r}
+#making tables of all relevant columns
+table(na_gpa$schoolID)
+table(na_gpa$schoolType)
+table(na_gpa$schoolYear8th)
+table(na_gpa$raceEth)
+table(na_gpa$gender)
+
+#Looking at the results above, it appears that among the 53 students with missing GPA:
+#most come from Usher Charter ES (39/53)
+#most come from a charter school (42/53)
+#most students are from the 2017 (22/53) and 2019 cohort (25/53)
+
+```
+
+Question 1c: In addition to missing GPAs at one school, the GPA data for students from one other school looks a bit odd. Identify that school and decide how to handle those GPAs.
+```{r}
+table(roster_with_gpa$schoolID)
+table(roster_with_gpa$GPA)
+
+#calculate how many students with 8.0 GPA
+sum(roster_with_gpa$GPA == 8, na.rm = TRUE)
+
+#Create a table that shows the roster data of students who have an 8.0 GPA
+roster_with_gpa_8 <- roster_with_gpa %>% filter(roster_with_gpa$GPA == 8)
+
+#Confirm which school contains the students with an 8.0 GPA
+table(roster_with_gpa_8$schoolID)
+
+#Cleaning for next steps
+roster_with_gpa_clean <- roster_with_gpa %>%
+  filter(!is.na(GPA) & GPA != 8.0)
+
+```
+How to handle this: These students should be excluded from the remainder of this analysis because this is a potential data entry error that can skew the overall data where GPA’s are on a 4.0 scale. In a real case scenario, the school should notify us on whether this is a true data entry error or whether they are using their own GPA scale and how it should be scaled on a 4.0 basis to match with the rest of the school system. 
+
+
+Question 2a: Create a categorical variable that groups students based on their eighth grade attendance rate. 
+```{r}
+# Add a new column that calculates the attendance rate, format for 2 decimal places
+roster_with_gpa_clean$attend_rate <- (roster_with_gpa_clean$daysAttend / roster_with_gpa_clean$daysEnroll) * 100
+roster_with_gpa_clean$attend_rate <- round((roster_with_gpa_clean$daysAttend / roster_with_gpa_clean$daysEnroll) * 100, 2)
+
+#We will define attendance rate below
+#Chronically Absent: Below 90% (Standard US threshold)
+#Satisfactory Attendance: 90% to 94.99%
+#Excellent Attendance: 95% to 100%
+
+#Creating categorical variables
+roster_with_gpa_clean <- roster_with_gpa_clean %>% 
+  mutate(
+    attend_cat = case_when(
+      attend_rate < 90  ~ "ChronicallyAbsent",
+      attend_rate >= 90 & attend_rate < 95 ~ "Satisfactory",
+      attend_rate >= 95 ~ "Excellent",
+      TRUE ~ NA_character_ # Handles any missing/NA rows
+    )
+  )
+
+table(roster_with_gpa_clean$attend_cat)
+
+```
+
+Question 2b: How do students’ eighth grade GPAs vary across attendance rate groups?
+```{r}
+#Statistics
+
+summary(roster_with_gpa_clean$GPA)
+
+#Statistical analysis (separate master roster into 3 attendance groups)
+# Create the Excellent attendance table
+roster_excellent <- roster_with_gpa_clean %>% 
+  filter(attend_cat == "Excellent")
+
+# Create the Satisfactory attendance table
+roster_satisfactory <- roster_with_gpa_clean %>% 
+  filter(attend_cat == "Satisfactory")
+
+# Create the Chronically Absent table
+roster_absent <- roster_with_gpa_clean %>% 
+  filter(attend_cat == "ChronicallyAbsent")
+
+summary(roster_excellent$GPA)
+summary(roster_satisfactory$GPA)
+summary(roster_absent$GPA)
+
+
+#The two sided t.test evaluates whether two rosters are different from one another based on a continuous variable
+#The greater t.test confirms that from one adjacent category to another, the average GPA is related to the attendance
+t.test(roster_excellent$GPA, roster_satisfactory$GPA, alternative = "two.sided")
+t.test(roster_excellent$GPA, roster_satisfactory$GPA, alternative = "greater")
+
+t.test(roster_satisfactory$GPA, roster_absent$GPA, alternative = "two.sided")
+t.test(roster_satisfactory$GPA, roster_absent$GPA, alternative = "greater")
+
+t.test(roster_excellent$GPA, roster_absent$GPA, alternative = "two.sided")
+t.test(roster_excellent$GPA, roster_absent$GPA, alternative = "greater")
+
+#Students in higher attendance catergories have higher GPAs than the students in lower attendance categories 
+
+```
+
+
+```{r}
+#Visualization
+
+#How do students’ eighth grade GPAs vary across attendance rate groups? Shown through a boxplot
+boxplot(GPA ~ factor(attend_cat, levels = c("Excellent", "Satisfactory", "ChronicallyAbsent")), 
+        data = roster_with_gpa_clean, 
+        main = "Comparing GPAs Across Attendance Catergoies", 
+        xlab = "Attendance Category",
+        ylab = "Eighth Grade GPA",
+        col = c("orange", "blue", "grey"))
+
+head(roster_with_gpa_clean)
+
+
+```
+
+
+Question 3: The following questions pertain to the group of students that our Network wants to focus on supporting, specifically students with a high attendance rate (above 90%) but low GPAs (below 3.0). Write a function that could answer these questions for any combination of attendance rate and GPA category, then run the function for the group of students with high attendance and low GPA
+```{r}
+
+#Cleaning for next steps
+master <- roster_with_gpa %>%
+  filter(!is.na(GPA) & GPA != 8.0)
+
+
+# Add a new column that calculates the attendance rate, format for 2 decimal places
+master$attend_rate <- (master$daysAttend / master$daysEnroll) * 100
+master$attend_rate <- round((master$daysAttend / master$daysEnroll) * 100, 2)
+
+#Creating categorical variables
+master_cats <- master %>% 
+  mutate(
+    attend_cat = case_when(
+      attend_rate < 90  ~ "Low",
+      attend_rate >= 90 ~ "High",
+      TRUE ~ NA_character_ # Handles any missing/NA rows
+    ),
+      GPA_cat = case_when(
+      GPA < 3.00000  ~ "Low",
+      GPA >= 3.00000 ~ "High",
+    ) 
+  )
+master_cats_hs <- master_cats %>%
+      left_join(hs_outcomes, by = "studID")
+
+#For the function we define the following assumptions:
+#Remove NAs and 8.0s in the GPA column
+#Make a attendance rate percentage column
+#Has high school outcomes with hsID and gradStatus columns
+#Created a binary categorical variable for attendance rate and GPA
+  #High attendance is 90 and above, Low attendance is below 90
+  #High GPA is 3.0 and above, Low GPA is below 3.0
+
+```
+
+Writing functions
+```{r}
+#3a: Has the percentage of students in this group changed over time (across different cohorts of 8th graders)?
+group_over_time <- function(data, attend_binary, GPA_binary) {
+  data %>%
+    group_by(schoolYear8th) %>%
+    summarize(
+      total_students = n(),
+      group_students = sum(attend_cat == attend_binary & GPA_cat == GPA_binary),
+      percent_groups = round(group_students / total_students * 100, 2)
+    )
+  
+}
+
+specific_results <- group_over_time(
+  data = master_cats_hs, 
+  attend_binary = "High",
+  GPA_binary = "Low"
+)
+
+print(specific_results)
+
+```
+
+```{r}
+#3b: What is the race/ethnicity composition of the students in this group, and how does it compare to the composition of the entire population of students?
+
+race_composition <- function(data, attend_binary, GPA_binary) {
+  
+  selected_group <- data %>%
+    filter(attend_cat == attend_binary & GPA_cat == GPA_binary) %>%
+    count(raceEth) %>%
+    mutate(
+      group = "Selected Group",
+      percent = round(n / sum(n) * 100, 2)
+    )
+  
+  all_students <- data %>%
+    count(raceEth) %>%
+    mutate(
+      group = "All Students",
+      percent = round(n / sum(n) * 100, 2)
+    )
+  
+  bind_rows(selected_group, all_students)
+}
+
+specific_results <- race_composition(
+  data = master_cats_hs, 
+  attend_binary = "High",
+  GPA_binary = "Low"
+  
+)
+
+print(specific_results)
+  
+```
+
+```{r}
+#3c: What is the high school graduation rate of students who were in this group in eighth grade? 
+
+graduation_rate <- function(data, attend_binary, GPA_binary) {
+  
+  data %>%
+    filter(attend_cat == attend_binary & GPA_cat == GPA_binary) %>%
+    filter(!is.na(gradStatus)) %>%
+    summarise(
+      total_students = n(),
+      graduates = sum(gradStatus == 1),
+      graduation_rate = round(mean(gradStatus == 1) * 100, 2)
+    )
+}
+
+specific_results <- graduation_rate(
+  data = master_cats_hs, 
+  attend_binary = "High",
+  GPA_binary = "Low"
+  
+)
+
+print(specific_results)
+
+
+```
+
+```{r}
+#3d: How does the high school graduation rate of students in this category vary across middle schools? 
+
+graduation_by_school <- function(data, attend_binary, GPA_binary) {
+  
+  data %>%
+    filter(attend_cat == attend_binary & GPA_cat == GPA_binary) %>%
+    filter(!is.na(gradStatus)) %>%
+    group_by(schoolID) %>%
+    summarise(
+      total_students = n(),
+      graduates = sum(gradStatus == 1, na.rm = TRUE),
+      graduation_rate = round(mean(gradStatus == 1, na.rm = TRUE) * 100, 2)
+    ) %>%
+    arrange(desc(graduation_rate))
+}
+
+specific_results <- graduation_by_school(
+  data = master_cats_hs, 
+  attend_binary = "High",
+  GPA_binary = "Low"
+  
+)
+
+print(specific_results)
+
+```
+
+```{r}
+#How does it vary across cohorts (years)?
+
+graduation_by_cohort <- function(data, attend_binary, GPA_binary) {
+  
+  data %>%
+    filter(attend_cat == attend_binary & GPA_cat == GPA_binary) %>%
+    filter(!is.na(gradStatus)) %>%
+    group_by(schoolYear8th) %>%
+    summarise(
+      total_students = n(),
+      graduates = sum(gradStatus == 1, na.rm = TRUE),
+      graduation_rate = round(mean(gradStatus == 1, na.rm = TRUE) * 100, 2)
+    )
+}
+
+specific_results <- graduation_by_cohort(
+  data = master_cats_hs, 
+  attend_binary = "High",
+  GPA_binary = "Low"
+  
+)
+
+print(specific_results)
+
+
+```
+
+Fuse all the mini functions into one primary function
+```{r}
+analyze_group <- function(data, attend_binary, GPA_binary) {
+  list(
+    group_over_time = group_over_time(data, attend_binary, GPA_binary), 
+    race_composition = race_composition(data, attend_binary, GPA_binary), 
+    graduation_rate = graduation_rate(data, attend_binary, GPA_binary), 
+    graduation_by_school = graduation_by_school(data, attend_binary, GPA_binary), 
+    graduation_by_cohort = graduation_by_cohort(data, attend_binary, GPA_binary)
+  )
+}
+
+specific_results <- analyze_group(
+  data = master_cats_hs, 
+  attend_binary = "High",
+  GPA_binary = "Low"
+  
+)
+
+print(specific_results)
+
+```
+
+
+Clean output (used LLM for cleanup)
+```{r}
+analyze_group <- function(data, attend_binary, gpa_binary) {
+  
+  cat("\n==============================\n")
+  cat("Analysis for:", attend_binary, "Attendance +", gpa_binary, "GPA\n")
+  cat("==============================\n\n")
+  
+  cat("1. Percentage of students in this group over time\n")
+  print(group_over_time(data, attend_binary, gpa_binary))
+  
+  cat("\n2. Race/ethnicity composition\n")
+  print(race_composition(data, attend_binary, gpa_binary))
+  
+  cat("\n3. Overall high school graduation rate\n")
+  print(graduation_rate(data, attend_binary, gpa_binary))
+  
+  cat("\n4. Graduation rate by middle school\n")
+  print(graduation_by_school(data, attend_binary, gpa_binary))
+  
+  cat("\n5. Graduation rate by cohort\n")
+  print(graduation_by_cohort(data, attend_binary, gpa_binary))
+}
+
+analyze_group(
+  data = master_cats_hs,
+  attend_binary = "High",
+  gpa_binary = "Low"
+)
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
